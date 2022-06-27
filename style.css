@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+    --color-dark: #272a31;
+    --color-coral: #ec5242;
+    --text-coral: #f44c06;
+    --color-white: #fff;
+    --bg-gray: #d3d3d3;
+    --text-gray: #909090;
+    --text-darkgray: #565656;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, serif ;
+    background-color: var(--color-white);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+header .logo {
+    border-radius: 5px;
+}
+
+.container {
+    width: 100vw;
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.firs-page {
+    width: 90vw;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.firs-page p {
+    color: var(--color-coral);
+}
+
+.firs-page h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--color-coral);
+  /**/
+}
+
+.firs-page .daily-quote {
+    border: 4px solid rgb(255, 255, 255);
+    background-color: rgb(247, 247, 248);
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin: 17px 0px;
+}
+
+.firs-page h2 {
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 4px;
+    letter-spacing: 0px;
+
+}
+
+.firs-page .location {
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+}
+
+.second-page {
+    background-image: url("https://summit.cckorea.org/images/base/pattern_bg.png");
+    background-repeat: repeat;
+    background-color: rgb(39, 42, 50);
+    color: var(--color-white);
+    width: 100vw;
+}
+
+.second-page h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.second-page .line {
+    width: 53px;
+    height: 2px;
+    background-color: var(--text-coral);
+    margin: 0px auto 54px;
+    text-align: center;
+}
+
+.program-list {
+    padding: 0;
+}
+
+.program-list li {
+    list-style: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.program-list li h4 {
+    color: rgb(239, 81, 60);
+}
+
+.second-page .join {
+    display: flex;
+    justify-content: center;  
+    width: 100vw;
+}
+
+.second-page .join a {
+    background-color: var(--text-coral);
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solide wheat;
+    font-size: 16px;
+    width: 60vw;
+    margin-bottom: 100px;
+}
+
+
+ 
+@media only screen and (max-width:768px) {
+
+    header {
+        /* background-image: url("images/bg.png");
+        background-size: cover;
+        background-repeat: no-repeat; */
+        height: 5vh;
+    }
+
+    header img {
+        width: 32px;
+        height: 24px;
+    }
+    
+    header .logo {
+            width: 80px;
+            height: 30px;
+    } 
+
+    .container {
+        height: 80vh;
+    }
+
+    .program-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .program-list li {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .program-list li img {
+        width: 20vw;
+    }
+
+    .program-list li h4 {
+        width: 20vw;
+    }
+
+    .program-list li p {
+        width: 60vw;
+        font-size: 16px;  
+    }
+
+
+    .mobile-menu {
+        display: none;
+    }
+
+   .open-menu {
+        padding-top: 20px;
+        width: 85vw;
+        height: 100vh;
+        background-color: var(--color-dark);
+        position: absolute;
+        top: -15px;
+        left: 0;
+        backdrop-filter: blur(20px);
+
+
+    }
+
+    .open-menu li {
+        list-style: none;
+        width: 65vw;
+        padding: 15px 25px 0px 25px;
+        border-top: 1px solid rgb(60, 63, 70);
+        margin-top: 25px;
+    }
+
+    .open-menu li a {
+        text-decoration: none;
+        font-size: 1em;
+        height: 2.5em;
+        color: rgb(255, 255, 255);
+
+      }
+
+      .open-menu .compaign {
+        width: 150px;
+        font-size: 1.125em;
+        font-weight: bold;
+        vertical-align: middle;
+        text-align: center;
+        background-color: #ef513c;
+        padding: 15px 15px;
+        color: #fff;
+        border: 0;
+        display: inline-block;
+      }
+
+      .open-menu .last-close {
+        border: 0px;
+      }
+
+      .open-menu .close_mobile_menu {
+        position: absolute;
+        right: 20px;
+        top: -15px;
+        height: 16px;
+        width: 16px;
+        margin-top: 30px;
+      }
+
+
+
+    }
+
