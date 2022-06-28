@@ -11,11 +11,14 @@
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Lato, serif;
   background-color: var(--color-white);
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
@@ -66,6 +69,12 @@ header .logo {
   margin: 17px 0;
 }
 
+footer h2 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--color-white);
+}
+
 .firs-page h2 {
   font-size: 15px;
   font-weight: 700;
@@ -93,7 +102,7 @@ header .logo {
   text-align: center;
 }
 
-.second-page .line {
+.line {
   width: 53px;
   height: 2px;
   background-color: var(--text-coral);
@@ -131,6 +140,44 @@ header .logo {
   font-size: 16px;
   width: 60vw;
   margin-bottom: 100px;
+}
+
+footer {
+  overflow-x: hidden;
+  background-color: rgb(39, 42, 50);
+  margin-top: 0;
+  width: 100vw;
+}
+
+.partners {
+  padding: 0;
+}
+
+.partners li {
+  list-style-type: none;
+}
+
+.copyright img {
+  width: 20vw;
+  height: 39px;
+}
+
+.partners li img {
+  width: 20vw;
+  height: 39px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 100vw;
+  margin: 0 5vw;
+}
+
+.copyright p {
+  width: 30vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -191,7 +238,7 @@ header .logo {
   .open-menu {
     padding-top: 20px;
     width: 85vw;
-    height: 100vh;
+    height: 120vh;
     background-color: var(--color-dark);
     position: absolute;
     top: -15px;
@@ -238,5 +285,14 @@ header .logo {
     height: 16px;
     width: 16px;
     margin-top: 30px;
+  }
+
+  .partners {
+    display: flex;
+    margin: 0 5%;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
   }
 }
