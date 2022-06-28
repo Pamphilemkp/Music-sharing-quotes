@@ -50,17 +50,22 @@ header .logo {
 
 .firs-page p {
   color: var(--color-coral);
+  font-size: 24px;
+  font-weight: 600px;
 }
 
 .firs-page h1 {
   font-size: 2rem;
   font-weight: 900;
   text-transform: uppercase;
-  color: var(--color-coral);
+  background-image: url("images/youAre.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .firs-page .daily-quote {
-  border: 4px solid rgb(255, 255, 255);
+  border: 4px solid white;
   background-color: rgb(247, 247, 248);
   font-size: 20px;
   padding: 10px;
@@ -181,6 +186,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  .top-menu {
+    display: none;
+  }
+
   header {
     /* background-image: url("images/bg.png");
         background-size: cover;
@@ -295,4 +304,141 @@ footer {
     justify-content: space-around;
     align-items: center;
   }
+}
+
+@media  only screen and (min-width: 769px) {
+  .top-menu {
+    background-color: var(--color-dark);
+    padding: 0px;
+    width: 100vw;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-white);
+    padding: 5px;
+    margin-top: 0;
+    margin-right: 5vw;
+    width: 90vw;
+  }
+
+  .nav-list {
+    list-style: none;
+  }
+
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  padding: 0px;
+ }
+
+ header img {
+  width: 32px;
+  height: 24px;
+}
+
+header .logo {
+  width: 150px;
+  height: 60px;
+}
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+  }
+
+  .mobile-menu li{
+    list-style: none;
+  }
+
+  .mobile-menu li a {
+    text-decoration: none;
+    color: var( --color-dark);
+  }
+
+  .mobile-menu li a:hover {
+    color: var( --color-coral); 
+  }  
+
+  .mobile-menu .compaign a {
+    color: var( --color-coral);
+    border: solid 2px  var( --color-coral);
+    padding: 10px;
+  }
+
+  .firs-page {
+    padding: 10vw;
+  }
+
+  .firs-page p {
+    color: var(--color-coral);
+    font-size: 27px;
+  }
+  
+  .firs-page h1 {
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .firs-page .daily-quote {
+    border: 4px solid rgb(255, 255, 255);
+    background-color: rgb(247, 247, 248);
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin: 17px 0;
+  }
+
+  .program-list {
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+    gap: 10px;
+    width: 100vw;
+  }
+
+   .program-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+  } 
+
+  .program-list li:hover {
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.9);
+    border-radius: 2px;
+    outline: 2px solid var(--color-white);
+  }
+
+  .partners {
+    display: flex;
+    margin: 0 5%;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5vw;
+  }
+
+  .partners li img {
+    width: 15vw;
+    height: 39px;
+  }
+
 }
