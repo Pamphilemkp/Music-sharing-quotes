@@ -167,6 +167,11 @@ footer {
   height: 39px;
 }
 
+.speaker-info img {
+  width: 80px;
+  height: 100px;
+}
+
 .partners li img {
   width: 20vw;
   height: 39px;
@@ -182,7 +187,68 @@ footer {
 }
 
 .copyright p {
-  width: 30vw;
+  /* width: 30vw; */
+}
+
+.speakers-container h2 {
+  text-align: center;
+}
+
+.speaker {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5vw 0;
+}
+
+.speaker-info {
+  display: flex;
+  gap: 10px;
+  width: 35vw;
+}
+
+.speaker-info .images {
+  position: relative;
+  width: 160px;
+  padding: 20px;
+}
+
+.speaker-info .images .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 0;
+}
+
+.speaker-info .images .bg1 {
+  position: relative;
+  z-index: 2;
+}
+
+.speaker-info .info {
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center; */
+  justify-content: center;
+  gap: 10px;
+}
+
+.speaker-info .info h3 {
+  margin: 0;
+}
+
+.speaker-info .info h4 {
+  color: var(--color-coral);
+  margin: 0;
+}
+
+.speaker-info .info p {
+  margin: 0 0 5vw 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -191,9 +257,6 @@ footer {
   }
 
   header {
-    /* background-image: url("images/bg.png");
-        background-size: cover;
-        background-repeat: no-repeat; */
     height: 5vh;
   }
 
@@ -303,6 +366,11 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .speaker-info {
+    width: 70vw;
+    gap: 20px;
   }
 }
 
