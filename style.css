@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --color-dark: #272a31;
+  --color-coral: #ec5242;
+  --text-coral: #f44c06;
+  --color-white: #fff;
+  --bg-gray: #d3d3d3;
+  --text-gray: #909090;
+  --text-darkgray: #565656;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, serif;
+  background-color: var(--color-white);
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+header .logo {
+  border-radius: 5px;
+  align-self: center;
+}
+
+.container {
+  width: 100vw;
+  background-image: url("images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.firs-page {
+  width: 90vw;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.firs-page p {
+  color: var(--color-coral);
+  font-size: 24px;
+  font-weight: 600px;
+}
+
+.firs-page h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-image: url("images/youAre.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.firs-page .daily-quote {
+  border: 4px solid white;
+  background-color: rgb(247, 247, 248);
+  font-size: 20px;
+  padding: 10px;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  margin: 17px 0;
+}
+
+footer h2 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.firs-page h2 {
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 4px;
+  letter-spacing: 0;
+}
+
+.firs-page .location {
+  font-size: 15px;
+  color: rgb(51, 51, 51);
+}
+
+.second-page {
+  background-image: url("https://summit.cckorea.org/images/base/pattern_bg.png");
+  background-repeat: repeat;
+  background-color: rgb(39, 42, 50);
+  color: var(--color-white);
+  width: 100vw;
+}
+
+.second-page h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.line {
+  width: 53px;
+  height: 2px;
+  background-color: var(--text-coral);
+  margin: 0 auto 54px;
+  text-align: center;
+}
+
+.program-list {
+  padding: 0;
+}
+
+.program-list li {
+  list-style: none;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.program-list li h4 {
+  color: rgb(239, 81, 60);
+}
+
+.second-page .join {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.second-page .join a {
+  background-color: var(--text-coral);
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border: 1px solide wheat;
+  font-size: 16px;
+  width: 60vw;
+  margin-bottom: 100px;
+}
+
+footer {
+  overflow-x: hidden;
+  background-color: rgb(39, 42, 50);
+  margin-top: 0;
+  width: 100vw;
+}
+
+.partners {
+  padding: 0;
+}
+
+.partners li {
+  list-style-type: none;
+}
+
+.copyright img {
+  width: 20vw;
+  height: 39px;
+}
+
+.speaker-info img {
+  width: 80px;
+  height: 100px;
+}
+
+.partners li img {
+  width: 15vw;
+  height: 25px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 100vw;
+  margin: 0 5vw;
+  padding-bottom: 5vw;
+}
+
+.speakers-container h2 {
+  text-align: center;
+}
+
+.speaker {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5vw 0;
+}
+
+.speaker-info {
+  display: flex;
+  gap: 10px;
+  width: 35vw;
+}
+
+.speaker-info .images {
+  position: relative;
+  width: 160px;
+  padding: 20px;
+}
+
+.speaker-info .images .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 0;
+}
+
+.speaker-info .images .bg1 {
+  position: relative;
+  z-index: 2;
+}
+
+.speaker-info .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.speaker-info .info h3 {
+  margin: 0;
+}
+
+.speaker-info .info h4 {
+  color: var(--color-coral);
+  margin: 0;
+}
+
+.speaker-info .info p {
+  margin: 0 0 5vw 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .top-menu {
+    display: none;
+  }
+
+  header {
+    height: 5vh;
+  }
+
+  header img {
+    width: 32px;
+    height: 24px;
+  }
+
+  header .logo {
+    width: 150px;
+    height: 40px;
+    margin-right: 15vw;
+  }
+
+  .container {
+    height: 80vh;
+  }
+
+  .program-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .program-list li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 90vw;
+  }
+
+  .program-list li img {
+    width: 20vw;
+  }
+
+  .program-list li h4 {
+    width: 20vw;
+  }
+
+  .program-list li p {
+    width: 60vw;
+    font-size: 16px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .open-menu {
+    padding-top: 20px;
+    width: 85vw;
+    height: 100vh;
+    background-color: var(--color-dark);
+    position: absolute;
+    top: -15px;
+    left: 0;
+    backdrop-filter: blur(20px);
+  }
+
+  .open-menu li {
+    list-style: none;
+    width: 65vw;
+    padding: 15px 25px 0 25px;
+    border-top: 1px solid rgb(60, 63, 70);
+    margin-top: 25px;
+  }
+
+  .open-menu li a {
+    text-decoration: none;
+    font-size: 1em;
+    height: 2.5em;
+    color: rgb(255, 255, 255);
+  }
+
+  .open-menu .compaign {
+    width: 150px;
+    font-size: 1.125em;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #ef513c;
+    padding: 15px 15px;
+    color: #fff;
+    border: 0;
+    display: inline-block;
+  }
+
+  .open-menu .last-close {
+    border: 0;
+  }
+
+  .open-menu .close_mobile_menu {
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    height: 16px;
+    width: 16px;
+    margin-top: 30px;
+  }
+
+  .partners {
+    display: flex;
+    margin: 0 5%;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10vw;
+  }
+
+  .speaker-info {
+    width: 70vw;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .top-menu {
+    background-color: var(--color-dark);
+    padding: 0;
+    width: 100vw;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-white);
+    padding: 5px;
+    margin-top: 0;
+    margin-right: 5vw;
+    width: 90vw;
+    list-style: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    padding: 0;
+  }
+
+  header img {
+    width: 32px;
+    height: 24px;
+  }
+
+  header .logo {
+    width: 150px;
+    height: 60px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+  }
+
+  .mobile-menu li {
+    list-style: none;
+  }
+
+  .mobile-menu li a {
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .mobile-menu .compaign a {
+    color: var(--color-coral);
+    border: solid 2px  var(--color-coral);
+    padding: 10px;
+  }
+
+  .mobile-menu li a:hover {
+    color: var(--color-coral);
+    font-size: 20px;
+  }
+
+  .firs-page {
+    padding: 10vw;
+  }
+
+  .firs-page p {
+    color: var(--color-coral);
+    font-size: 27px;
+  }
+
+  .firs-page h1 {
+    font-size: 55px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .firs-page .daily-quote {
+    border: 4px solid rgb(255, 255, 255);
+    background-color: var(--bg-gray);
+    font-size: 25px;
+    padding: 15px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin: 17px 0;
+    width: 70vw;
+    mix-blend-mode: multiply;
+  }
+
+  .program-list {
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+    gap: 10px;
+    width: 100vw;
+  }
+
+  .program-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+  }
+
+  .program-list li:hover {
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.9);
+    border-radius: 2px;
+    outline: 2px solid var(--color-white);
+  }
+
+  .partners {
+    display: flex;
+    margin: 0 5%;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5vw;
+  }
+
+  .partners li img {
+    width: 10vw;
+    height: 25px;
+  }
+}
