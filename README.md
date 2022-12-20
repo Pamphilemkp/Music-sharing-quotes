@@ -1,5 +1,5 @@
 
-# Capstone_1
+# Music Sharing Quotes
 
 First capstone project
 
@@ -14,7 +14,7 @@ First capstone project
 ## Live Demo
 
 Let's see how it looks like 
-Here 👉[Capstone]( https://pamphilemkp.github.io/Capstone_1/)
+Here 👉[Capstone](https://pamphilemkp.github.io/Music-sharing-quotes/)
 
 ## Authors
 
