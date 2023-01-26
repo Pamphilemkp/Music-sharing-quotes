@@ -11,6 +11,9 @@ First capstone project
 - CSS
 - JavaScript
 
+## App Screenshot
+![musicquotes](https://user-images.githubusercontent.com/98436409/214840242-9b050db1-08e4-495c-82d4-7b7a18080b10.png)
+
 ## Live Demo
 
 Let's see how it looks like 
